@@ -170,17 +170,31 @@ section {
   padding: 1em;
 }
 
+.container-frames {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.wireframes-title {
+  text-align: center;
+}
+
 .wireframe-one {
   max-width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   height: auto;
+  grid-column: 1/2;
 }
 
 .wireframe-two {
   max-width: 50%;
-  height: auto;
+  height: 100%;
   display: block;
   margin-left: auto;
   margin-right: auto;
+  grid-column: 2/3;
 }
 
 .uppercase {
